@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Harish Periasamy - Aspiring Software Engineer & Computer Science Engineering graduate. Skilled in Java, Python, full-stack fundamentals, and AI/computer vision projects.">
+  <meta name="keywords" content="Harish Periasamy, Software Engineer, Java Developer, CSE Graduate, VSB Engineering College, Full Stack Developer Portfolio">
+  <meta name="author" content="Harish Periasamy">
+  <title>Harish Periasamy | Aspiring Software Engineer</title>
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Loading Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="loader-logo">HP</div>
+    <div class="loader-bar">
+      <div class="loader-progress"></div>
+    </div>
+  </div>
+
+  <!-- Soft Ambient Blob Canvas & Orbs -->
+  <canvas id="particle-canvas"></canvas>
+  <div class="ambient-orb orb-1"></div>
+  <div class="ambient-orb orb-2"></div>
+  <div class="ambient-orb orb-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="header" id="header">
+    <nav class="navbar">
+      <a href="#home" class="logo">
+        <span class="logo-dot"></span>
+        Harish <span>P</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certificates" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-grid">
+      <div class="hero-content reveal">
+        <div class="badge-tag">
+          <span class="pulse-dot"></span> Open to Software Engineer Roles
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="highlight-text">Harish Periasamy</span>
+        </h1>
+        <div class="typing-container">
+          <span class="typing-text" id="typing-text"></span>
+          <span class="cursor-blink"></span>
+        </div>
+        <p class="hero-bio">
+          Final-year Computer Science and Engineering student with a strong foundation in Java, Python, and web technologies, and hands-on experience building AI and full-stack projects. Seeking a Software Engineer / Developer role to apply strong problem-solving skills, deliver clean and efficient code, and contribute to impactful, high-growth engineering teams.
+        </p>
+        <div class="hero-buttons">
+          <a href="assets/Harish_Periasamy_Resume.pdf" class="btn btn-primary" id="btn-download-resume" download>
+            <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fa-solid fa-paper-plane"></i> Contact Me
+          </a>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/Harishcse2006" target="_blank" rel="noopener" class="social-icon" title="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/harish-periasamy-52b254326" target="_blank" rel="noopener" class="social-icon" title="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:harishcse2024@gmail.com" class="social-icon" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-avatar-container reveal">
+        <div class="avatar-wrapper">
+          <div class="avatar-glow-ring"></div>
+          <div class="avatar-inner">
+            <!-- Replace this placeholder: add your photo at assets/profile.jpg -->
+            <div class="avatar-placeholder">HP</div>
+            <!-- <img src="assets/profile.jpg" alt="Harish Periasamy" class="avatar-img"> -->
+          </div>
+          <div class="floating-badge badge-1">
+            <i class="fa-brands fa-java"></i> Java & Python
+          </div>
+          <div class="floating-badge badge-2">
+            <i class="fa-solid fa-layer-group"></i> AI / Computer Vision
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="about-section" id="about">
+    <div class="section-header reveal">
+      <span class="section-tag">// WHO I AM</span>
+      <h2 class="section-title">About <span>Me</span></h2>
+    </div>
+    <div class="about-grid">
+      <div class="glass-card about-text-content reveal" data-tilt>
+        <p>
+          I am a final-year Computer Science and Engineering student at V.S.B. Engineering College, Karur, with a strong foundation in Java, Python, and web technologies. I have hands-on experience building AI and full-stack projects, and I enjoy applying strong problem-solving skills to deliver clean and efficient code.
+        </p>
+        <p>
+          I'm currently seeking a Software Engineer / Developer role where I can contribute to impactful, high-growth engineering teams while continuing to grow as a developer.
+        </p>
+      </div>
+      <div class="about-highlights reveal">
+        <div class="stat-box" data-tilt>
+          <div class="stat-number">8.18</div>
+          <div class="stat-label">CGPA / 10</div>
+        </div>
+        <div class="stat-box" data-tilt>
+          <div class="stat-number">2026</div>
+          <div class="stat-label">Expected Graduate</div>
+        </div>
+        <div class="stat-box" data-tilt>
+          <div class="stat-number">Java</div>
+          <div class="stat-label">Primary Programming Language</div>
+        </div>
+        <div class="stat-box" data-tilt>
+          <div class="stat-number">CSE</div>
+          <div class="stat-label">V.S.B. Engineering College</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills-section" id="skills">
+    <div class="section-header reveal">
+      <span class="section-tag">// TECHNICAL PROFICIENCY</span>
+      <h2 class="section-title">My <span>Skills</span></h2>
+    </div>
+    <div class="skills-grid">
+
+      <!-- Programming Languages -->
+      <div class="glass-card skill-category reveal" data-tilt>
+        <h3 class="skill-category-title">
+          <i class="fa-solid fa-code"></i> Programming Languages
+        </h3>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+            <div class="skill-name">Java</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fa-brands fa-python"></i></div>
+            <div class="skill-name">Python</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web Technologies -->
+      <div class="glass-card skill-category reveal" data-tilt>
+        <h3 class="skill-category-title">
+          <i class="fa-solid fa-globe"></i> Web Technologies
+        </h3>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+            <div class="skill-name">HTML</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+            <div class="skill-name">CSS</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Domains -->
+      <div class="glass-card skill-category reveal" data-tilt>
+        <h3 class="skill-category-title">
+          <i class="fa-solid fa-layer-group"></i> Domains
+        </h3>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fa-solid fa-server"></i></div>
+            <div class="skill-name">Full Stack (Foundational)</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fa-solid fa-eye"></i></div>
+            <div class="skill-name">AI / Computer Vision</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Strengths -->
+      <div class="glass-card skill-category reveal" data-tilt>
+        <h3 class="skill-category-title">
+          <i class="fa-solid fa-lightbulb"></i> Core Strengths
+        </h3>
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fa-solid fa-sitemap"></i></div>
+            <div class="skill-name">Data Structures & Algorithms</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fa-solid fa-cubes"></i></div>
+            <div class="skill-name">Object-Oriented Programming</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+            <div class="skill-name">Problem Solving</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section" id="projects">
+    <div class="section-header reveal">
+      <span class="section-tag">// ACADEMIC PROJECTS</span>
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+    </div>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="glass-card project-card reveal" data-tilt>
+        <div class="project-header">
+          <div class="project-icon-box">
+            <i class="fa-solid fa-video"></i>
+          </div>
+        </div>
+        <h3 class="project-title">AI-Powered Crowd Detection System</h3>
+        <p class="project-desc">
+          Designed and developed an AI-based crowd detection system to monitor and analyze crowd density from visual inputs in real time. Applied computer vision techniques to improve detection accuracy of individuals in dense environments, strengthening practical skills in AI model integration, image processing, and system evaluation.
+        </p>
+        <div class="tech-badges">
+          <span class="tech-badge">AI</span>
+          <span class="tech-badge">Computer Vision</span>
+          <span class="tech-badge">Python</span>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="glass-card project-card reveal" data-tilt>
+        <div class="project-header">
+          <div class="project-icon-box">
+            <i class="fa-solid fa-calculator"></i>
+          </div>
+        </div>
+        <h3 class="project-title">Calculator Application</h3>
+        <p class="project-desc">
+          Built a fully functional calculator application to perform core arithmetic operations with a clean user interface. Applied strong programming logic and modular design to ensure accuracy and reliability.
+        </p>
+        <div class="tech-badges">
+          <span class="tech-badge">Java</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Internship Experience Section -->
+  <section class="education-section" id="internship">
+    <div class="section-header reveal">
+      <span class="section-tag">// PROFESSIONAL EXPERIENCE</span>
+      <h2 class="section-title">Internship <span>Experience</span></h2>
+    </div>
+    <div class="timeline-container">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="glass-card timeline-card" data-tilt>
+          <span class="timeline-badge">Internship</span>
+          <h3 class="timeline-title">Full Stack Development Intern</h3>
+          <p class="timeline-institution">Infosys</p>
+          <p style="margin-top: 10px; font-size: 0.9rem; color: var(--text-muted);">
+            Completed a hands-on internship focused on full stack development fundamentals, gaining exposure to end-to-end web application workflows. Collaborated in a professional environment to build foundational industry-ready development skills.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Timeline -->
+  <section class="education-section" id="education">
+    <div class="section-header reveal">
+      <span class="section-tag">// ACADEMIC JOURNEY</span>
+      <h2 class="section-title">Education</h2>
+    </div>
+    <div class="timeline-container">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="glass-card timeline-card" data-tilt>
+          <span class="timeline-badge">Bachelor's Degree</span>
+          <h3 class="timeline-title">V.S.B. Engineering College, Karur</h3>
+          <p class="timeline-institution">Bachelor of Engineering (B.E.) — Computer Science and Engineering</p>
+          <div class="timeline-score">CGPA: 8.18 / 10 &nbsp;|&nbsp; Expected 2026</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section class="certificates-section" id="certificates">
+    <div class="section-header reveal">
+      <span class="section-tag">// CREDENTIALS</span>
+      <h2 class="section-title">My <span>Certifications</span></h2>
+    </div>
+    <div class="cert-grid">
+      <div class="glass-card cert-card reveal" data-tilt>
+        <div class="cert-icon">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <h3 class="cert-name">Cyber Security Certification</h3>
+      </div>
+
+      <div class="glass-card cert-card reveal" data-tilt>
+        <div class="cert-icon">
+          <i class="fa-brands fa-java"></i>
+        </div>
+        <h3 class="cert-name">Java Foundation Certification</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Strengths Section -->
+  <section class="languages-section" id="strengths">
+    <div class="section-header reveal">
+      <span class="section-tag">// WHAT SETS ME APART</span>
+      <h2 class="section-title">Key <span>Strengths</span></h2>
+    </div>
+    <div class="lang-grid">
+      <div class="glass-card lang-card reveal" data-tilt>
+        <div class="lang-info">
+          <h4>Quick Learner</h4>
+          <p>Adapts rapidly to new tools, frameworks, and technologies</p>
+        </div>
+      </div>
+      <div class="glass-card lang-card reveal" data-tilt>
+        <div class="lang-info">
+          <h4>Strong Problem-Solver</h4>
+          <p>Analytical thinker with a logical approach to challenges</p>
+        </div>
+      </div>
+      <div class="glass-card lang-card reveal" data-tilt>
+        <div class="lang-info">
+          <h4>Effective Team Collaborator</h4>
+          <p>Communicates well and contributes positively in team settings</p>
+        </div>
+      </div>
+      <div class="glass-card lang-card reveal" data-tilt>
+        <div class="lang-info">
+          <h4>Growth-Oriented</h4>
+          <p>Proactive about continuously upgrading technical skills</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Languages Section -->
+  <section class="languages-section" id="languages">
+    <div class="section-header reveal">
+      <span class="section-tag">// COMMUNICATION</span>
+      <h2 class="section-title">Languages <span>Spoken</span></h2>
+    </div>
+    <div class="lang-grid">
+      <div class="glass-card lang-card reveal" data-tilt>
+        <div class="lang-info">
+          <h4>English</h4>
+        </div>
+      </div>
+
+      <div class="glass-card lang-card reveal" data-tilt>
+        <div class="lang-info">
+          <h4>Tamil</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="section-header reveal">
+      <span class="section-tag">// GET IN TOUCH</span>
+      <h2 class="section-title">Contact <span>Me</span></h2>
+    </div>
+    <div class="contact-grid">
+
+      <!-- Contact Info -->
+      <div class="glass-card contact-info-card reveal" data-tilt style="grid-column: 1 / -1; max-width: 560px; margin: 0 auto;">
+        <h3>Let's build something great together!</h3>
+        <p style="color: var(--text-muted);">
+          I am currently seeking software engineering opportunities. Feel free to reach out for project collaborations or hiring inquiries.
+        </p>
+
+        <div class="contact-item">
+          <div class="contact-icon-box">
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="contact-details">
+            <label>Email</label>
+            <a href="mailto:harishcse2024@gmail.com">harishcse2024@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon-box">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="contact-details">
+            <label>Phone</label>
+            <a href="tel:+919629122588">+91 96291 22588</a>
+          </div>
+        </div>
+
+        <div style="margin-top: 10px;">
+          <label style="font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 12px;">Social Profiles</label>
+          <div class="social-links">
+            <a href="https://github.com/Harishcse2006" target="_blank" rel="noopener" class="social-icon" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/harish-periasamy-52b254326" target="_blank" rel="noopener" class="social-icon" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <a href="#home" class="back-to-top" title="Back to Top">
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+      <p class="footer-text">
+        Designed and Developed by <span>Harish Periasamy</span>
+      </p>
+      <p style="color: var(--text-muted); font-size: 0.85rem;">
+        &copy; 2026 All Rights Reserved
+      </p>
+    </div>
+  </footer>
+
+  <!-- Custom Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/tilt.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
